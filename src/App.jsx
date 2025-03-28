@@ -7,7 +7,7 @@ function App() {
     const name = form.name.value;
     const email = form.email.value;
     const user = { name, email };
-    console.log(user);
+    // console.log(user);
 
     fetch("http://localhost:5000/users", {
       method: "POST",
@@ -18,7 +18,7 @@ function App() {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.insertedId) {
           alert("User added successfully!");
           form.reset();

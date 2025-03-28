@@ -8,7 +8,7 @@ const Update = () => {
     const form = e.target;
     const name = form.name.value;
     const email = form.email.value;
-    console.log(name, email);
+    // console.log(name, email);
     const updatedUser = { name, email };
 
     fetch(`http://localhost:5000/users/${loadedUser._id}`, {
@@ -20,7 +20,7 @@ const Update = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.modifiedCount > 0) {
           alert("User updated successfully!!");
         }
