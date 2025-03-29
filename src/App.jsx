@@ -25,7 +25,14 @@ function App() {
   };
   return (
     <>
-      <h1 className="mb-4">Simple CRUD</h1>
+      <h1 className="mb-2">Simple CRUD</h1>
+      <div className="mb-2">
+        <span className="loading loading-infinity loading-xs"></span>
+        <span className="loading loading-infinity loading-sm"></span>
+        <span className="loading loading-infinity loading-md"></span>
+        <span className="loading loading-infinity loading-lg"></span>
+        <span className="loading loading-infinity loading-xl"></span>
+      </div>
       <form onSubmit={handleAddUser}>
         <input
           className="border border-2 rounded-lg mb-2"
