@@ -25,13 +25,25 @@ function App() {
   };
   return (
     <>
-      <h1>Simple CRUD</h1>
+      <h1 className="mb-4">Simple CRUD</h1>
       <form onSubmit={handleAddUser}>
-        <input type="text" name="name" />
+        <input
+          className="border border-2 rounded-lg mb-2"
+          type="text"
+          name="name"
+        />
         <br />
-        <input type="email" name="email" />
+        <input
+          className="border border-2 rounded-lg"
+          type="email"
+          name="email"
+        />
         <br />
-        <input type="submit" value="Add User" />
+        <input
+          type="submit"
+          className="mt-4 cursor-pointer underline"
+          value="Add User"
+        />
       </form>
     </>
   );
