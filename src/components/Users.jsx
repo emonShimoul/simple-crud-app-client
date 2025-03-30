@@ -20,13 +20,23 @@ const Users = () => {
       });
   };
   return (
-    <div>
-      <h2>Users: {users.length}</h2>
-      <div>
-        {users.map((user) => (
-          <User key={user._id} handleDelete={handleDelete}></User>
-        ))}
-      </div>
+    <div className="overflow-x-auto">
+      <table className="table">
+        {/* head */}
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((user, idx) => (
+            <User key={idx} handleDelete={handleDelete} user={user}></User>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

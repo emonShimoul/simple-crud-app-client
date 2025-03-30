@@ -1,29 +1,16 @@
-const User = () => {
+const User = (user) => {
+  console.log(user.user);
+
   return (
-    <div className="overflow-x-auto">
-      <table className="table">
-        {/* head */}
-        <thead>
-          <tr>
-            <th></th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {/* row 1 */}
-          <tr>
-            <th>1</th>
-            <td>Cy Ganderton</td>
-            <td>{User.email}</td>
-            <div>
-              <button>Update</button>
-            </div>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <tr>
+      <th>1</th>
+      <td>Cy Ganderton</td>
+      <td>{user.user.email}</td>
+      <td className="flex gap-2">
+        <button className="btn btn-xs btn-warning text-white">Update</button>
+        <button className="btn btn-xs btn-error text-white">Delete</button>
+      </td>
+    </tr>
   );
 };
 
