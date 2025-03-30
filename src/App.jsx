@@ -34,17 +34,9 @@ function App() {
         <span className="loading loading-infinity loading-xl"></span>
       </div>
       <form onSubmit={handleAddUser}>
-        <input
-          className="border border-2 rounded-lg mb-2"
-          type="text"
-          name="name"
-        />
+        <input className="border-2 rounded-lg mb-2" type="text" name="name" />
         <br />
-        <input
-          className="border border-2 rounded-lg"
-          type="email"
-          name="email"
-        />
+        <input className="border-2 rounded-lg" type="email" name="email" />
         <br />
         <input
           type="submit"
