@@ -1,13 +1,13 @@
-const User = (user) => {
-  console.log(user.user);
-
+const User = ({ user, handleDelete }) => {
   return (
     <tr>
       <th>1</th>
       <td>Cy Ganderton</td>
-      <td>{user.user.email}</td>
+      <td>{user.email}</td>
       <td className="flex gap-2">
-        <button className="btn btn-xs btn-warning text-white">Update</button>
+        <button className="btn btn-xs btn-success" onClick={handleDelete}>
+          Update
+        </button>
         <button className="btn btn-xs btn-error text-white">Delete</button>
       </td>
     </tr>

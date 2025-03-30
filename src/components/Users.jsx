@@ -33,7 +33,7 @@ const Users = () => {
         </thead>
         <tbody>
           {users.map((user, idx) => (
-            <User key={idx} handleDelete={handleDelete} user={user}></User>
+            <User key={idx} user={user} handleDelete={handleDelete}></User>
           ))}
         </tbody>
       </table>
