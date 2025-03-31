@@ -1,6 +1,4 @@
 const User = ({ user, handleDelete }) => {
-  //   console.log(user);
-
   return (
     <tr>
       <th>1</th>
