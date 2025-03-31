@@ -8,18 +8,6 @@ const Users = () => {
 
   const handleDelete = (id) => {
     console.log("Deleted ID: ", id);
-
-    // fetch(`http://localhost:5000/users/${_id}`, {
-    //   method: "DELETE",
-    // })
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     if (data.deletedCount > 0) {
-    //       alert("Deleted Successfully!!");
-    //       const remaining = users.filter((user) => user._id !== _id);
-    //       setUsers(remaining);
-    //     }
-    //   });
   };
   return (
     <div className="overflow-x-auto">
